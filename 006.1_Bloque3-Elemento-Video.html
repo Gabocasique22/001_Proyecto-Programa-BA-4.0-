@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML</title>
+
+
+</head>
+<body>
+    <!-- Vamos a ver la inserción de un video de producción propia dentro de un documento HTML, audio y videos desde youtube y otras plataformas -->
+
+    <!-- IMPORTANTE: tener en cuenta la compatibilidad o soporte que tienen los navegadores
+         Se recomienda visitar la página web: https://caniuse.com/ 
+         Por ejemplo si buscamos el elemento video, este herramienta nos va a mostrar una lista de navegadores e indicará:
+         1. Con que versiones es compatibles.
+         2. Y en donde podemos llegar a tener algun inconveniente o problema.
+        
+    Se debe tener en cuenta que NO todos los usuarios van a entrar con el mismo navegadores, sino que la mayoria es probable que ingrese con un celular.-->
+
+    <!-- Debes tener claro que pasaría si usamos algun elemento Media en este caso elemento video.
+     Cuando usamos esta pagina "Can I Use" nos podemos fijar, sí lo que estamos desarrollando funcionará 
+     en la mayoria de los navegadores y/o en la mayorias de los dispositivos-->
+
+     <!--IMPORTANTE, si algun cliente te contrata para algun desarrollo y les dice: tiene que tener compatibilidad con tal navegador,
+    Lo importante es que si nos piden que tenga compatibilidad con la versión 8 de internet explorer, lo que tenemos que tener en cuenta
+    es esta página "canisue" y decirle al cliente, si es Tag Video esta soportado o no por las versiones 6 a 8 de IE (Internet Explorer).-->
+
+
+<!--El elemento video tiene ciertos atributos como width, height y aparecen unos nuevos como "controls, autoplay, autobuffer, buffered, loop, preload, poster, src"-->
+
+    <video controls
+        width="320" height="240" >
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        Tu navegador no soporta el elemento video, por lo cual no podras visualizar este contenido.
+        Intenta acceder al mismo con un navegador mas moderno.
+    </video>
+
+
+<!--Este video esta presentado en dos formatos distintos mp4 y ogg.
+Lo que se buscar es ser lo mas campatible con los usuarios que estan del otro lado.
+Si el navegador con el que accede el usuario es compatible con mp4 el navegador le va entregar el contenido en mp4,
+Si el navegador con el que accede el usuario * NO * compatible con mp4 pero si con el formato ogg el video que reproducirá es el que tiene el formato ogg-->
+
+<!--Es importante dejar un comentario claro por si llegara a suceder que no se puede reproducir el video.-->
+
+</body>
+</html>

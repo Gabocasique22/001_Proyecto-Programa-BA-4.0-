@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- En el siguiente desafio se contempla el uso de Casillas y Botones
+         Los botones de radio se suelen utilizar cuando el usuario debe elegir sólo una opción específica de varias disponibles. 
+         Si las opciones son demasiadas, se suele optar por una lista de selección.-->
+
+
+<!-- * FORMULARIO 1-->
+    <form name="Formulario1-DesafioBloque2" action="" method="post" >
+
+        <label>Nombre de ficción del colaborador</label>
+            <input type="text" placeholder="Ingrese su nombre" name="Nombre"/>  
+        
+        <label>¿Cree conocer una persona que se enriquecio de la noche a la mañana en Venezuela?</label>
+            <input type="radio"  /> Si
+            <input type="checkbox"  /> No
+
+            <input type="submit" value="Enviar">
+    </form>
+
+    
+
+<!-- * FORMULARIO 2; contempla Casillas para llenar.-->   
+            <p>
+                ¿Conoce usted un corrupto?
+                <input type="radio" value="Si" /> Si conozco.
+                <input type="radio" value="No" /> No conozco.
+            </p>      
+
+    
+
+<!-- * FORMULARIO 3, lista de selección-->  
+
+    <form name="formulario2-DesafioBloque2" method="post" action="">
+        <select>¿Conoce algun presunto responsable de enriquecimiento ilicito?
+            <option value="1">Si</option>
+            <option value="2">No</option>
+        </select>
+    </form>
+
+
+
+
+    
+    <form name="formulario3-DesafioBloque2" method="post" action="">
+        <select name="combo" multiple>
+
+          <!-- Formato alternativo con atributo label -->
+          <optgroup label="Opciones básicas">
+            <option value="1" label="Opcion 1 de las básicas"> </option>
+            <option value="2" label="Opcion 2 de las básicas"> </option>
+          </optgroup>
+      
+          <optgroup label="Opciones avanzadas">
+            <option value="3" label="Opcion 3 de las avanzadas"> </option>
+          </optgroup>
+        </select>
+      </form>
+
+<!--<optgroup> es una etiqueta contenedora para agrupar varias etiquetas <option>; 
+    De esta forma, podemos crear pequeñas agrupaciones para tener más organizada la lista de opciones.-->
+
+<!--Para que sirve el atributo value
+    Se debe usar el atributo value para definir el valor que se enviará por este elemento.-->
+
+</body>
+</html>

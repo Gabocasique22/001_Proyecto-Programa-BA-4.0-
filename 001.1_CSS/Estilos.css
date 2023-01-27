@@ -1,0 +1,131 @@
+/** CSS no es un lenguaje de marcado, sino que es va ser un documento que referencie a las etiquetas de html,
+Con lo cual **/
+
+/**Si queremos aplicar a todos nuestros elementos HTML una propiedad
+se usa el selector "*" 
+
+Si bien estamos definiendo que a todos los elementos le tenemos que aplicar el color, 
+¿Por qué no se aplica a todos? Aquí es donde empezamos a entender porque se llama hoja de estilos en cascada.
+Porque estamos definiendo una propiedad que quiero que compartan absolutamente todos los elementos de mi documento HTML.
+
+¿Pero que pasa si por debajo hay otro elemento que tiene redefinida la propiedad color? 
+Respuesta: El elemento aplicara la propiedad al que mas especifico sea.
+
+Se pueden definir varios atributos para varios elementos**/
+
+
+* {
+  color: black;
+  width: 600px;               /**Para indicar que (ANCHO) tamaño deseamos que tengan nuestros elementos <p> **/
+
+
+  font-family: 'Luxurious Roman', cursive; 
+  font-size: 10px; /**especifica la dimensión de la letra.**/
+
+
+}
+
+
+    p, span{
+    color:darkblue;        /**con la etiqueta <style> Se trabaja la propiedad <color> para los elemento <p> del <body> sean darkslategrey **/
+    width: 400px;            /**Para indicar que (ANCHO) tamaño deseamos que tengan nuestros elementos <p> **/
+    font-family: 'Luxurious Roman', cursive; 
+    font-size: 20px; /**especifica la dimensión de la letra.**/  
+  }
+
+
+
+    /**En el siguiente ej NO se especifican medidas y CSS aplica medidas genericas para todos los lados.**/
+    h1{
+        border: 5px solid black;
+        padding: 5px;
+        margin: 30px;
+        font-weight: bold;       /**Letras en negrita**/
+        color:darkblue;
+        font-size: 20px;        /**especifica la dimensión de la letra.**/
+      }
+
+
+    /**En el siguiente ejemplo buscamos especificar la medida para cada lado de la caja.**/
+    h2{
+        border: 1px solid black;
+        margin-left: 10px;        /** **/
+        margin-right: 10px;       /** **/
+        margin-top: 40px;         /**Arriba**/
+        margin-bottom: 10px;      /**Abajo**/
+        padding-left:15 px;
+        padding-right:15 px;
+        padding-top:20 px;
+        padding-bottom:20 px;
+        font-weight: bold;        /**Letras en negrita**/
+        color:darkblue
+    }
+
+    h3{
+        border: 5px solid black;
+        
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        padding: 30px 15px 25px 20px;
+
+        font-weight: bold;        
+        color:darkblue
+    }
+
+    section{
+        width: 300px;
+        border: 20px solid darkgreen;
+        padding: 50px;
+         margin: 20px;
+    }
+
+
+/**Si queremos crear algo que sea reutilizable y que se pueda aplicar a muchos elementos: 
+
+1. podemos entrar por el nombre del elemento.
+Como hicimos anteriormente definimos un un estilo que aplica a todas las paginas html.
+Pero si no queremos que todos los h1 de nuestro proyecto sean iguales, podemos dar un estilo a c/u.
+
+
+2. 
+Como podemos ver en esta hoja de estilos CSS, nuestro elemento P ya tiene varios atributos definidos
+¡Qué pasa si queremos que uno de nuestros elementos P tenga propiedades que no tienen los demas.
+
+En este caso aplicamos el selector ID, identificamos a este elemento unequivocamente dentro del doc. HTML
+Para eso utilizamos el atributo ID.
+       
+IMPORTANTE NO PUEDEN HABER DOS ELEMENTOS CON EL MISMO ID, COMO EL DOCUMENTO DE CUALQUIER PERSONA.
+**/
+/**alt+35**/
+#mi_parrafo{
+            color:green;
+            font-size: 23px;
+            border: 1px solid green;
+            font-weight: bold;
+            }
+
+#primeratipografia-soloparah1{
+  font-family: 'Luxurious Roman', cursive; 
+  color:black;
+  font-size: 125px; /**especifica la dimensión de la letra.**/
+  font-weight: bold;
+}
+
+/** 3. Podemos crear clases. **/
+
+.estaesmiclase{
+  font-weight: bold;
+  color:red;
+}
+/**Como vemos tenes dos posibilidades para aplicar estilos a nuestro elemento <p> sin entrar por el eleento directamente.
+
+
+/**ELEMENTO ANIDADO:
+   Por ej si yo quiero aplicar una regla a todos los h1 que esten encerrados
+   dentro de un elemento <section>, lo que tenemos que hacer desde CSS es:**/
+
+   section h1 {
+              font-weight: 100;
+              }

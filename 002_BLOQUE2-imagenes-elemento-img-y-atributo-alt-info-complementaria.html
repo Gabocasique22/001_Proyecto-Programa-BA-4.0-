@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos a incluir una imagen en nuestro documento</title>
+</head>
+<body>
+    <!--1.PRIMER COMENTARIO: en nuestro body vamos a incluir el elemento img que es el de la imagen-->
+    
+    <!--2.SEGUNDO COMENTARIO: ATRIBUTO es la información complementaria que le vamos a dar a nuestro elemento/etiqueta para poder decir de algun modo completarlo,
+        o dan mas información de la que necesita ese elemento para poder mostrarse en el navegador.
+        
+        En este caso el elemento img va necesitar del atributo src/source (fuente); que va ser la ruta generica de la imagen
+        Va necesitar del atributo alt/alternative (Alternativo) que es el texto alternativo que aparecera si la imagen no se carga exitosamente.-->
+
+    <!--3.TERCER COMENTARIO: Si bien el 99% de los elementos de HTML tienen un elemento de apertura y uno de cierre, el elemento img tiene una particularidad
+        y es que se cierra en si mismo, esto quiere decir que no necesita un elemento de cierre-->
+
+
+        <img src="RUTA-por-definir" alt="Texto alternativo que aparecera si la imagen no se carga exitosamente">
+
+        
+    <!--4. Al correr este codigo podemos ver que no se renderiza ninguna imagen, porque no agregamos de manera correcta una ruta interna o externa.
+           En consecuencia nos aparece el texto alternivo.-->
+
+    <!--5. IMPORTANTE "Buena practica del HTML" siempre que se utilice un elemento img,
+           el src es la ruta donde vamos a incluir nuestra imagen.
+           Debe tener el atributo alt para que el usuario puede ver un texto en caso de que la imagen no funcione como corresponde.-->
+
+
+
+        <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/12/Darth-Vader.jpg" alt="Imagen de Darh Darth Vader 1" height="500px" width="500px">
+
+
+    <!--Tenemos que especificar el alto y el ancho con los atributos: height(altura) y width(ancho)-->
+
+
+        <img src="D:\IT Formaciòn\Programa BA 4.0\PROYECTOS\001.1_Proyecto BA-4/002_DarthVaderJPG.jpg" alt="Imagen de Darth Vader" height="500px" width="500px" >
+
+
+    <!--En este documento de trabajo podemos ver como subir una imagen desde el src copiado de una pagina web y desde una carpeta del equipo/ carpeta local. -->
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--Cuando elaboramos una web para un cliente, tambien lo hacemos para el robot de google.
+
+Cuando iniciamos una busqueda en google, esto se construye organicamente. 
+
+¿Qué es organicamente? 
+Los que aparecen sin que digan anuncio, estan posicionando muy bien cuando voy y le pregunto a google sobre algo en especifico.
+
+La semantica da un contexto.
+Un elemento semántico describe claramente su significado tanto para el navegador como para el desarrollador.
+
+* Ejemplos de elementos no semánticos : <div>y <span>- No dice nada sobre su contenido.
+* Ejemplos de elementos semánticos : <form>, <table> y <article>- Define claramente su contenido.
+-->
+
+<!-- Elementos semánticos en HTML
+<artículo> <aparte> <detalles> <figcaption> <figura> <pie de página> <encabezado> <principal> <marcar> <navegación> <sección> <resumen> <tiempo> 
+Ver fuente: https://www.w3schools.com/html/html5_semantic_elements.asp -->
+
+
+
+<div    id="nav"> Antes se hacia de esta modo (1)</div>
+    
+<div    class="header"> Antes se hacia de esta modo (2)</div>  
+    
+<div    id="footer"> Antes se hacia de esta modo (3)</div>
+
+<!--Antiguamente, como faltaban elementos lo que se hacia era construir pequeños bloques con <div> es un divisor / no deja de ser un contenedor de algo-->
+
+<!--Actualmente HTML ha evolucionado y se realiza de la siguiente manera: -->
+
+
+<header>
+    <h1>Es el título mas importante de la página</h1>
+</header>
+<nav>
+    <h2>Hola Mundo</h2>
+</nav>
+<footer>
+    <h3>Hola Mundo</h3>
+</footer>
+
+
+<!--IMPORTANTE: Anatomia de un elemento de HTML,
+    1. Sabemos lo que es un elemento de Bloque y de Línea.
+    2. Cuando elegimos un elementos, debemos tener clara la importancia del valor semantico.
+    NOTA: si bien puedo escribir un titulo utilizando el elemento <p> no es lo correcto, si recordamos el concepto del valor semantico lo correcto sería usar <h1 al h6>.
+    
+    Quienes trabajan con el posicionamiento organico (SEO - Search Engine Optimization) si no se respetan estos criterios de semantica, considerará que es un desastre,
+    porque si bien nos parece que se ve bien (maquetado, identado y prolijo), pero si el titulo mas importante de la pagina se construye con el tag <p> es un desastre.-->
+
+
+
+<!-- Si nos dedicamos a ser maquetadores Frontend posiblemente el diseño lo provee el diseñador web, este nos hará llegar una imagen y 
+     tenemos que ser capaces de identificar como ir armando las cajas para que se renderice como lo quiere el diseñador web -->
+</body>
+</html>

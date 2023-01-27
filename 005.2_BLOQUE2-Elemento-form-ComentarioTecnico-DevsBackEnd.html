@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Todo Dev Frontend tiene que tener esto tan muy claro.
+        Por mas que luego la parte del BackEnd le agregue lo que hace falta para que cuando el usuario envie la información al servidor,
+        del otro lado Backend se procese y se guarde en una base de datos, envíe un correo, o lo que sea que haga el formulario cuando se procese. 
+
+        OJO     ¿Qué es lo que tienen que tener en cuenta?
+                Preparar al Dev Backend, cuando armen un formulario independientemente de si van hacer o no la parte backend: 
+                * Deben sumar el ATRIBUTO action que es el que define a que pagina va mandar el formulario, cuando el usuario envie la información que ingreso.
+                * Tambien se puede agregar el ATRIBUTO metodo/method con el que se envie la información al servidor.
+                    
+                    Por lo general los Devs Backend suelen trabajar con el method "post" que es el que cuando el usuario envía la información al servidor NO nos va mostrar
+                    las variables que viajan. Si lo Coloco en method "get" vamos a mandar las variables por el URL
+
+                    Method/Metodos existentes para enviar la información al servidor.
+                    1. dialog
+                    2. get (Muestra las Variables)
+                    3. post (NO LO MUESTRA EN LA URL)
+    -->
+
+    <form action="" method="get" >
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre"/>
+        
+        <label>Apellido</label>
+        <input type="text" placeholder="Ingrese su apellido"/>      
+        
+        <label>E-mail</label>
+        <input type="E-mail" placeholder="Ingrese su E-mail"/>
+
+        <label>Password</label>
+        <input type="password" placeholder="Ingrese su clave"/>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+    
+<!-- Si llenamos el formulario, y enviamos la información vemos que la pagina se recarga y el link aparece con un signo de interrogación
+    
+    ¿Esta bien que aparezca el signo de interrogación? 
+    Sí porque el method "get" cuando envía la info al servidor manda las variables en la URL.
+
+
+    Entonces el Dev Backend agradecerá que definamos un nombre a cada una de las variables. 
+        Ejemplo:
+        <label>Nombre</label>
+        <input type="text" placeholder="Ingrese su nombre" name="Nombre"/>
+
+        Por el simple hecho de haber agregado el atributo name="" dentro de un <input/> ahora si estamos mandando la información.
+
+        IMPORTANTE: si vas a trabajar con contraseñas no utilices el method get.
+
+-->
+
+<!--Validación: en algun momento cuando llenaron algun formulario habrán visto que si dejaban llenar algun campo que estaba marcado como obligatorio
+    (porque el desarrollo ese formulario, lo pedía como obligatorio) seguramente les arrojo "este campo es obligario"
+
+Como pequeño desafio adicional al de crear un formulario esta propiedad-->
+
+
+
+
+</body>
+</html>
